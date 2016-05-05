@@ -33,10 +33,9 @@ end
 
 def valid_creds?(username, password)
   creds = load_cred
-  binding.pry
   if creds.key?(username)
     bcrypt_password = BCrypt::Password.new(creds[username])
-    bcyrpt_password == password
+    bcrypt_password == password
   else
     false
   end
