@@ -6,5 +6,13 @@ body {
 .message {
   padding: 10px;
   background: #FFFF99;
-  color: red;
+}
+
+form.inline {
+  display: inline
+}
+
+.user-status {
+  font-style: italic;
+  font-size: 0.9em;
 }
